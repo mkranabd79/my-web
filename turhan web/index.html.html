@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Turhan Kabir | Floating Portfolio</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial;
+  background:black;
+  color:white;
+  overflow-x:hidden;
+}
+
+/* FLOATING EFFECT */
+section{
+  padding:80px 10%;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%{transform:translateY(0px);}
+  50%{transform:translateY(-20px);}
+  100%{transform:translateY(0px);}
+}
+
+h1{
+  font-size:50px;
+  text-align:center;
+}
+
+h2{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+/* GRID */
+.grid{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.card{
+  background:#111;
+  padding:20px;
+  border-radius:15px;
+  width:250px;
+  text-align:center;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:scale(1.05);
+}
+
+/* BUTTON */
+button{
+  padding:10px 20px;
+  border:none;
+  border-radius:20px;
+  background:#0ff;
+  cursor:pointer;
+  margin-top:10px;
+}
+
+/* PLAN GLOW FIX */
+.card.popular{
+  position:relative;
+  box-shadow:0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff;
+  transform:scale(1.08);
+}
+
+/* BADGE */
+.badge{
+  position:absolute;
+  top:-10px;
+  right:-10px;
+  background:#0ff;
+  color:black;
+  padding:5px 12px;
+  font-size:12px;
+  border-radius:12px;
+  font-weight:bold;
+}
+</style>
+
+</head>
+<body>
+
+<!-- HERO -->
+<section>
+<h1>Turhan Kabir</h1>
+<p style="text-align:center;max-width:600px;margin:auto;">
+I am a passionate Web Developer. I create modern, animated, and professional websites. 
+I can build portfolios, client systems, AI tools, and even Arduino projects at an extreme level.
+</p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://picsum.photos/400/250?1" style="width:100%;border-radius:10px;">
+<br><br>
+AI Dashboard
+<br>
+<button onclick="alert('Opening Project')">View</button>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/250?2" style="width:100%;border-radius:10px;">
+<br><br>
+E-Commerce
+<br>
+<button onclick="alert('Opening Project')">View</button>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/250?3" style="width:100%;border-radius:10px;">
+<br><br>
+Landing Page
+<br>
+<button onclick="alert('Opening Project')">View</button>
+</div>
+
+</div>
+</section>
+
+<!-- WHAT I PLAY -->
+<section id="play">
+<h2>What I Play</h2>
+
+<div class="grid">
+<div class="card">🔥 Pro Minecraft Player</div>
+<div class="card">⚡ Free Fire Player</div>
+<div class="card">⚽ FC Player</div>
+</div>
+</section>
+
+<!-- WHAT I DO BEST -->
+<section id="best">
+<h2>What I Do Best</h2>
+
+<div class="grid">
+<div class="card">🚀 Advanced Web Development</div>
+<div class="card">🎨 Modern UI/UX Design</div>
+<div class="card">🤖 AI Integration Systems</div>
+<div class="card">⚙️ Arduino & Hardware Projects</div>
+<div class="card">💼 Client-Based Web Systems</div>
+<div class="card">🔥 High-Level Animations & Effects</div>
+</div>
+</section>
+
+<!-- CHOOSE YOUR PLAN -->
+<section id="plan">
+<h2>Choose Your Plan</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>💡 Basic</h3>
+<p>Simple Website<br>Clean Design<br>Fast Delivery</p>
+<button onclick="window.open('https://wa.me/8801515659050')">Choose Plan</button>
+</div>
+
+<div class="card popular">
+<div class="badge">MOST POPULAR</div>
+<h3>🚀 Standard</h3>
+<p>Advanced Website<br>Animations<br>Responsive Design</p>
+<button onclick="window.open('https://wa.me/8801515659050')">Choose Plan</button>
+</div>
+
+<div class="card">
+<h3>🔥 Premium</h3>
+<p>Full System<br>AI + Animations<br>Ultimate Experience</p>
+<button onclick="window.open('https://wa.me/8801515659050')">Choose Plan</button>
+</div>
+
+</div>
+</section>
+
+<!-- HELP -->
+<section>
+<h2>Help</h2>
+<p style="text-align:center;">
+Need help? Contact me anytime! <br>
+Email: turhanje@gmail.com
+</p>
+</section>
+
+<!-- CODING -->
+<section>
+<h2>Coding Skills</h2>
+<p style="text-align:center;">
+I can also build extreme level Arduino systems and advanced coding projects.
+</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact Me</h2>
+
+<div class="grid">
+
+<div class="card">📞 Phone: 01712308731</div>
+
+<div class="card">📧 Email: turhanje@gmail.com</div>
+
+<div class="card">
+💬 Discord: turhankabir
+<br>
+<button onclick="window.open('https://discord.com', '_blank')">Open Discord</button>
+</div>
+
+<div class="card">
+🟢 WhatsApp: +8801515659050
+<br>
+<button onclick="window.open('https://wa.me/8801515659050')">Chat on WhatsApp</button>
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
